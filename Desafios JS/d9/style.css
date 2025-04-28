@@ -1,0 +1,19 @@
+button {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #dcd8d8; /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    /*border: none; /* Remove a borda */
+    border-radius: 0px; /* Arredonda as bordas */
+    cursor: pointer; /* Adiciona um cursor de "mão" quando o mouse passa sobre o botão */
+    transition: all 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+    
+    /* Adiciona sombra ao botão */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #dcd8d1; /* Cor do botão quando o mouse passar sobre ele */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}

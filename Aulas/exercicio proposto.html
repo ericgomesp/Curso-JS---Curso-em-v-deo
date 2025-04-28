@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    <input type="text" name="Nacionalidade" id="Nacionalidade" placeholder="Digite sua nacionalidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div> <!-- Div para exibir o resultado -->
+
+    <script>
+        
+        // Função para verificar nacionalidade
+        function verificar() {
+            var txtv = document.getElementById('Nacionalidade'); // Obtém o campo de input por ID
+            var res = document.getElementById('res'); // Obtém a div para o resultado
+            var nac = txtv.value.trim(); // Remove espaços extras do valor digitado
+
+            // Exibe a mensagem inicial
+            res.innerHTML = `Sua nacionalidade é de <strong>${nac}</strong>`;
+
+            // Usando localeCompare para comparação insensível ao caso
+            if (nac.localeCompare('brasileiro', undefined, { sensitivity: 'accent' }) === 0) {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`;
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`;
+            }
+
+            // Mensagem de boas-vindas
+            res.innerHTML += `<p>Seja bem-vindo!</p>`;
+        }
+
+        // Adiciona o evento para o campo de texto
+        document.getElementById('Nacionalidade').addEventListener('keydown', function(event) {
+            // Verifica se a tecla pressionada foi o Enter (código 13)
+            if (event.key === 'Enter') {
+                verificar(); // Chama a função verificar() como se o botão fosse clicado
+            }
+        });
+    </script>
+</body>
+</html>

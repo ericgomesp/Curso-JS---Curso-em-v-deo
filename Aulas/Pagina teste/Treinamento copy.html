@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Captação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(225, 10, 10, 0);
+            width: 100%;
+            max-width: 600px;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: #45a049;
+        }
+        .success-message {
+            display: none;
+            color: #4caf50;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Captação</h2>
+        <form id="captacaoForm">
+            <label for="captador">Nome do Captador</label>
+            <input type="text" id="captador" name="captador" placeholder="Digite o nome do captador" required>
+
+            <label for="equipe">Equipe</label>
+            <input type="text" id="equipe" name="equipe" placeholder="Digite o nome da equipe" required>
+
+            <label for="contato">Número de Contato</label>
+            <input type="tel" id="contato" name="contato" placeholder="(00) 00000-0000" required>
+            <label for="whatsapp">É WhatsApp?</label>
+            <input type="checkbox" id="whatsapp" name="whatsapp">
+
+            <label for="tipo">Tipo de Imóvel</label>
+            <input type="text" id="tipo" name="tipo" placeholder="Ex: Apartamento, Casa, etc." required>
+
+            <!-- Campos numéricos -->
+            <label for="quartos">Quantos Quartos</label>
+            <input type="number" id="quartos" name="quartos" placeholder="Digite o número de quartos" required>
+
+            <label for="suites">Quantas Suítes</label>
+            <input type="number" id="suites" name="suites" placeholder="Digite o número de suítes" required>
+
+            <label for="banheiros">Quantos Banheiros</label>
+            <input type="number" id="banheiros" name="banheiros" placeholder="Digite o número de banheiros" required>
+
+            <label for="vagas">Quantas Vagas</label>
+            <input type="number" id="vagas" name="vagas" placeholder="Digite o número de vagas" required>
+
+            <label for="areaUtil">Área Útil/Construída (m²)</label>
+            <input type="number" id="areaUtil" name="areaUtil" placeholder="Digite a área útil/construída" required>
+
+            <label for="areaTotal">Área Total (m²)</label>
+            <input type="number" id="areaTotal" name="areaTotal" placeholder="Digite a área total" required>
+
+            <label for="andar">Qual Andar</label>
+            <input type="number" id="andar" name="andar" placeholder="Digite o andar" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+
+            <label for="numero">Número</label>
+            <input type="number" id="numero" name="numero" placeholder="Digite o número" required>
+
+            <label for="andaresPredio">Quantos Andares no Prédio</label>
+            <input type="number" id="andaresPredio" name="andaresPredio" placeholder="Digite o número de andares no prédio" required>
+
+            <label for="unidadesPorAndar">Unidades por Andar</label>
+            <input type="number" id="unidadesPorAndar" name="unidadesPorAndar" placeholder="Digite o número de unidades por andar" required>
+
+            <label for="valor">Valor</label>
+            <input type="text" id="valor" name="valor" placeholder="Digite o valor do imóvel" required>
+
+            <label for="valorCondominio">Valor do Condomínio/Mês</label>
+            <input type="text" id="valorCondominio" name="valorCondominio" placeholder="Digite o valor do condomínio" required>
+
+            <label for="valorIPTU">Valor IPTU</label>
+            <input type="text" id="valorIPTU" name="valorIPTU" placeholder="Digite o valor do IPTU" required>
+
+            <label for="tituloAnuncio">Título do Anúncio</label>
+            <input type="text" id="tituloAnuncio" name="tituloAnuncio" placeholder="Digite o título do anúncio" required>
+
+            <!-- Campos de texto para as demais informações -->
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+
+            <label for="complemento">Complemento</label>
+            <input type="text" id="complemento" name="complemento" placeholder="Digite o complemento">
+
+            <label for="caracteristicasImovel">Características do Imóvel</label>
+            <textarea id="caracteristicasImovel" name="caracteristicasImovel" placeholder="Descreva as características do imóvel" rows="4"></textarea>
+
+            <label for="caracteristicasCondominio">Características do Condomínio</label>
+            <textarea id="caracteristicasCondominio" name="caracteristicasCondominio" placeholder="Descreva as características do condomínio" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+            <p class="success-message" id="successMessage">Formulário enviado com sucesso!</p>
+        </form>
+    </div>
+
+    <script>
+        // Função para aplicar a máscara de telefone
+        function mascaraTelefone(event) {
+            var input = event.target;
+            var valor = input.value.replace(/\D/g, '');
+            
+            if (valor.length <= 10) {
+                input.value = valor.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3');
+            } else {
+                input.value = valor.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+            }
+        }
+
+        // Função para aplicar a máscara de CEP
+        function mascaraCEP(event) {
+            var input = event.target;
+            var valor = input.value.replace(/\D/g, '');
+            input.value = valor.replace(/^(\d{5})(\d{3})$/, '$1-$2');
+        }
+
+        // Função para formatar valores monetários (R$)
+        function formatarMoeda(event) {
+            var input = event.target;
+            var valor = input.value.replace(/\D/g, '');
+            valor = (valor / 100).toFixed(2).replace('.', ',');
+            input.value = `R$ ${valor}`;
+        }
+
+        // Aplica a máscara de telefone ao campo de número de contato
+        document.getElementById('contato').addEventListener('input', mascaraTelefone);
+
+        // Aplica a máscara de CEP
+        document.getElementById('cep').addEventListener('input', mascaraCEP);
+
+        // Aplica a formatação de moeda
+        document.getElementById('valor').addEventListener('input', formatarMoeda);
+        document.getElementById('valorCondominio').addEventListener('input', formatarMoeda);
+        document.getElementById('valorIPTU').addEventListener('input', formatarMoeda);
+
+        const form = document.getElementById('captacaoForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const dados = {
+                captador: document.getElementById('captador').value,
+                equipe: document.getElementById('equipe').value,
+                contato: document.getElementById('contato').value,
+                whatsapp: document.getElementById('whatsapp').checked,
+                tipo: document.getElementById('tipo').value,
+                quartos: document.getElementById('quartos').value,
+                suites: document.getElementById('suites').value,
+                banheiros: document.getElementById('banheiros').value,
+                vagas: document.getElementById('vagas').value,
+                areaUtil: document.getElementById('areaUtil').value,
+                areaTotal: document.getElementById('areaTotal').value,
+                andar: document.getElementById('andar').value,
+                cep: document.getElementById('cep').value,
+                numero: document.getElementById('numero').value,
+                andaresPredio: document.getElementById('andaresPredio').value,
+                unidadesPorAndar: document.getElementById('unidadesPorAndar').value,
+                valor: document.getElementById('valor').value,
+                valorCondominio: document.getElementById('valorCondominio').value,
+                valorIPTU: document.getElementById('valorIPTU').value,
+                tituloAnuncio: document.getElementById('tituloAnuncio').value,
+                bairro: document.getElementById('bairro').value,
+                endereco: document.getElementById('endereco').value,
+                complemento: document.getElementById('complemento').value,
+                caracteristicasImovel: document.getElementById('caracteristicasImovel').value,
+                caracteristicasCondominio: document.getElementById('caracteristicasCondominio').value
+            };
+
+// Salva os dados no localStorage
+localStorage.setItem('formDados', JSON.stringify(dados));
+
+successMessage.style.display = 'block';
+form.reset();
+
+setTimeout(() => {
+    successMessage.style.display = 'none';
+}, 5000);
+});
+    </script>
+</body>
+</html>

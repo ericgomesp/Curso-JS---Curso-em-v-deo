@@ -1,0 +1,269 @@
+<script src="juntar.js"></script> - Juntar um arquivo JS externo ao HTML
+<link rel="stylesheet" href="juntar.css"> - Juntar um arquivo JS externo ao HTML
+
+Sempre quando iniciar um arquivo HTML começar digitando HTML:5 que já vai digitar automaticamente
+E sempre vai vir na linguagem Inglesa, portanto mudar sempre para "pt-br"
+
+<style></style> sempre para CSS - <script></script> para JS todos eles dentro do arquivo HTML
+
+Criar <title></title> sempre para Titulo
+
+Ciar body{} Para o corpo do texto de estilização
+- font-family: fonte do site
+- background-color: cor do fundo do site
+- color: cor do site
+- margin: Margem
+- text-align: alinhar texto
+
+<h1></h1> a <h6></h6> são tÍtulos
+<p></p>: Paragrafo
+<button></button>: Tipo de botão
+<strong></strong>: Deixar o texto em negrito
+var, let ou const: Denomina uma variável
+window.prompt: aparece a janela para você digitar algum dado chamado
+window.alert: aparece uma janela mostrando algo
+windom.confirm: sim ou não
+
+/*pegar um código inteiro e colocar como comentário */
+// comentário linha de código
+
+Passando o mouse em cima da cor você consegue muda-lo
+
+Existem vários eventos DOM porém estes são alguns exemplos para praticar
+
+- mouseenter
+- mousemove
+- mousedown
+- mouseup
+- click
+- mouseout
+
+function ação(){
+  bloco
+}
+------------------------------------------------------
+			            Modulo A
+
+**CONHECENDO O JAVASCRIPT**
+
+HTML - Conteúdo
+CSS - Estilo
+JAVASCRIPT - Interação
+------------------------------------------------------
+			            Modulo B
+
+**COMANDOS BÁSICOS**
+
+ Identificadores
+
+- Podem começar com letra,$ ou _
+- Não podem começar com números
+- É possível usar letras e números
+- É possível usar acentos e símbolos
+- Não podem conter espaços
+- Não podem ser palavras
+
+DICAS	
+
+- Maiúsculas e minúsculas fazem diferença
+- Tente escolher nomes coerentes para as variáveis
+- Evite se tornar um 'programador alfabeto' ou um 'programador contador'
+
+Data Types - chamados typeof
+
+*number* - infinity,NaN
+*string*
+*boolean*
+*null*
+*undefined*
+*object* - array
+*function*
+
+Adição: (number + number)
+Concatenação: (string + string)
+
+NumberarseInt(n) conversão de um numero pra numero inteiro
+NubmerparseFloat(n) conversão de numero com virgula
+Number(n) pode ser usado a maioria das vezes
+
+String(n): string para numero
+n.toString(): numero para string
+
+var s = 'JavaScript
+'Eu estou aprendendo s' //não faz interpolação
+'Eu estou aprendendo' + S // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string
+
+var n1 = 1545.5
+n1toFixed(2)
+n1toFixed(2).replace('.', ',')
+n1.toLocateStreing('pt-Br', {style:, 'currency' 'currency': 'BRL'})
+n1.toLocateStreing('pt-Br', {style:, 'currency' 'currency': 'USD'})
+n1.toLocateStreing('pt-Br', {style:, 'currency' 'currency': 'EUR'})
+
+ARITMÉTICOS
+
++ adição
+- subtração
+* multiplicação
+/ divisor
+% por cento (resto)
+** potencia
+
+Ordem de Precedência
+
+|()
+|**
+|* / %
+|+ -
+
+Simplificando
+
+n + n = 4   /  n += 4
+x - x = 3  /  x -= 3
+n++ //+1
+n-- //-1 
+
+OPERADORES
+
+>  	// maior que
+<	// menor que
+>=	// maior ou igual
+<=	// menor ou igual
+==	// igualdade
+!=	// Não igual(diferente)
+
+5 == 5    true
+5 == '5'  false
+5 === '5' true
+
+!  negação	
+%% conjunção	
+|| disjunção
+
+Ordem de precedência
+
+| () ** /
+| > < >= <=
+| !
+| &&
+| ||
+
+TERNÁRIO
+
+? :
+var media = 5.5
+medIa > 7?'APROVADO':'REPROVADO'
+------------------------------------------------------
+			            Modulo C
+
+**CONHECENDO O DOM**
+
+DOM
+Document Object Model = Modelo de Objetos para Documentos
+
+			window
+                      /    |   \                       
+		locate document history
+		           |
+			 html
+                        /   \
+		       head body
+                      /  |      \
+	    	  meta title      h1 p p div
+                               
+Métodos de acesso DOM
+
+por Marca    	getElementsByTagName()
+por ID       	getElementById()
+por Nome    	getElementsByName()
+por Classe	getElementsbByClassName()
+por Seletor	querrySelector()  querrySelectorAll ()
+------------------------------------------------------
+			            Modulo D
+
+**CONDIÇÕES EM JS**
+
+			 O
+		  /    \
+		true  false       if(condição) {
+		   \   /               true
+		     O			  }else {
+			 |				   false
+			 			  }
+Condição simples (Somente if)
+
+Condição composta (if e else)
+						  
+Condição Múltipla
+
+					 0
+				  / / \ \
+				0 0    0 0
+				 \ \   / /
+				 	 0
+
+Quando usar case sempre usar break é essencial
+------------------------------------------------------
+			            Modulo E
+------------------------------------------------------
+			            Modulo F
+
+
+            			Macetes CSS
+
+font: fonte
+background:cor do fundo
+color: cor
+width: largura
+height: altura
+line-height: espaçamento entre as linhas de texto
+text-align: texto centralizado
+
+sempre quando for fazer uma chamada para CSS link ja vai aparecer ai voce selecionao CSS
+sempre quando for fazer uma chamada para JS script vai aparecer ai voce seleciona src 
+
+Condição simples: Avalia apenas uma condição.
+Condição composta: Combina múltiplas condições usando operadores lógicos.
+Condição múltipla: Usa várias opções para testar diferentes possibilidades de condições.
+
+													REPETIÇÕES
+while = Enquanto(Condição)
+
+Blocos = {}	
+
+function comerPizza(){
+	while (temFatia){
+		comer fatia()
+	}
+}
+
+function comerPizza(){
+	comer fatia()
+	comer fatia()
+	comer fatia()
+	comer fatia()
+	comer fatia()
+	comer fatia()
+	comer fatia()
+	comer fatia()
+}
+
+Note que a condição while se torna bem melhor do que a sem while	
+
+do = faça~
+
+do{
+
+}while (condição)
+
+while do..while e for são estruturas de laço ou repetição
+
+unicode emoji list para encontrar emojis
+
+Variáveis --> (let, const)
+Condicionai --> (if, else, switch)
+Laços de repetição --> (for, while, forEach)
+Funções --> (declaração, parâmetros, retorno)
+Arrays e Objetos (manipular, percorrer)
+Funções de array --> (map, filter, reduce — esses são ouro!)
