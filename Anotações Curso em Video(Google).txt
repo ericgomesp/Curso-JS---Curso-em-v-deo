@@ -267,3 +267,72 @@ Laços de repetição --> (for, while, forEach)
 Funções --> (declaração, parâmetros, retorno)
 Arrays e Objetos (manipular, percorrer)
 Funções de array --> (map, filter, reduce — esses são ouro!)
+
+
+🟩Vue.js
+O que é: Um framework JavaScript progressivo para construir interfaces de usuário (front-end).
+
+Usado para: Criar SPAs (aplicações de página única), dashboards, sistemas com interatividade no navegador.
+
+Exemplo de uso: Painel de controle de uma plataforma de pagamentos.
+
+🟪 Next.js
+O que é: Um framework React para aplicações web modernas, com foco em performance.
+
+Usado para: Criar sites rápidos com SSR (Server-Side Rendering) e SEO otimizado.
+
+Exemplo de uso: Sites institucionais, e-commerces ou blogs com conteúdo dinâmico.
+
+🟨 Node.js
+O que é: Um ambiente de execução JavaScript no servidor (back-end).
+
+Usado para: Criar APIs, sistemas de login, automações, e servidores completos.
+
+Exemplo de uso: Um sistema de pagadoria que emite boletos, consulta banco de dados e envia e-mails.
+
+🟦 Bootstrap
+O que é: Um framework CSS (e JS) para estilizar sites de forma rápida e responsiva.
+
+Usado para: Criar layouts prontos, com botões, formulários, grids, modais etc.
+
+Exemplo de uso: Interface bonita e responsiva para uma página de login sem muito esforço.
+
+🔵 jQuery
+O que é: Uma biblioteca JavaScript antiga, criada para facilitar manipulação de HTML, eventos, animações e requisições AJAX.
+
+Usado para: Tornar o JavaScript mais simples (hoje em dia, menos usado em projetos modernos).
+
+Exemplo de uso: Validação de formulário ou animações simples.
+
+🟫 MySQL
+O que é: Um sistema gerenciador de banco de dados relacional.
+
+Usado para: Armazenar dados estruturados (usuários, boletos, relatórios, pagamentos).
+
+Exemplo de uso: Tabela com os boletos pagos e não pagos de cada cliente.
+
+⚙️ Webpack
+O que é: Um empacotador de módulos (module bundler) para JavaScript.
+
+Usado para: Organizar, compilar e otimizar todos os arquivos do projeto (JS, CSS, imagens, fontes).
+
+Exemplo de uso: Projeto em Vue ou React que precisa compilar tudo em um único arquivo otimizado para produção.
+
+⚡ Resumo prático:
+
+Tecnologia	Área	Uso principal
+Vue.js	Front-end	Criar interfaces ricas e dinâmicas
+Next.js	Front-end/Fullstack	Sites rápidos com React
+Node.js	Back-end	Criar servidores e APIs com JavaScript
+Bootstrap	Front-end	Layouts rápidos e responsivos
+jQuery	Front-end	Scripts JS simples (uso legado)
+MySQL	Banco de dados	Armazenar e consultar dados estruturados
+Webpack	Build tools	Compilar e otimizar arquivos do projeto
+
+Métodos 5 Q's para montar um algorítimo
+
+1 Q --> Quais são os dados de entrada necessários?
+2 Q --> O que devo fazer com estes dados?
+3 Q --> Quais são as restrições deste problema?
+4 Q --> Qual é o resultado esperado?
+5 Q --> QUal é a sequência de passos a ser feitas para chegar ao resultado esperado
